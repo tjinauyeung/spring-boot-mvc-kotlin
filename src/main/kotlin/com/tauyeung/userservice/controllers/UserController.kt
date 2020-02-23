@@ -5,6 +5,8 @@ import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.server.ResponseStatusException
+import javax.validation.Valid
+import javax.validation.constraints.NotNull
 import javax.validation.constraints.Positive
 
 @RestController
@@ -15,6 +17,15 @@ class UserController(private val repository: UserRepository) {
     @Operation(description = "Get all users")
     fun getUsers() = repository.findAll()
 
+    @PostMapping("")
+    @Operation(description = "Create user")
+    fun createUser(
+        @Valid
+        @NotNull(message = "User is required")
+        @RequestBody
+        user: User
+    ) = repository.save(user);
+
     @GetMapping("/{id}")
     @Operation(description = "Get user by id")
     fun getUser(
@@ -23,24 +34,6 @@ class UserController(private val repository: UserRepository) {
         id: Long
     ) = repository.findById(id)
         .orElseThrow { ResponseStatusException(HttpStatus.NOT_FOUND, "User $id not found") }
-
-    @PutMapping("/{id}")
-    @Operation(description = "Update user")
-    fun updateUser(
-        @Positive
-        @PathVariable("id")
-        id: Long,
-
-        @RequestBody
-        request: User
-    ) = repository.save(
-        User(
-            id = id,
-            firstName = request.firstName,
-            lastName = request.lastName,
-            email = request.email
-        )
-    )
 
     @DeleteMapping("/{id}")
     @Operation(description = "Delete user by id")
