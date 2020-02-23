@@ -9,13 +9,19 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.server.ResponseStatusException
 import javax.validation.constraints.Positive
 
+import io.swagger.v3.oas.annotations.Operation
+import io.swagger.v3.oas.annotations.tags.Tag
+
 @RestController
 @RequestMapping("/users")
+@Tag(name = "Users", description = "CRUD endpoints")
 class UserController(private val repository: UserRepository) {
     @GetMapping("")
+    @Operation(description = "Get all users")
     fun getUsers() = repository.findAll()
 
     @GetMapping("/{id}")
+    @Operation(description = "Get user by id")
     fun getUser(
         @Positive
         @PathVariable("id")
