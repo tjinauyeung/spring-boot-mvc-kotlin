@@ -1,7 +1,7 @@
-package com.tauyeung.microkotlinservice.config
+package com.tauyeung.userservice.config
 
-import com.tauyeung.microkotlinservice.models.User
-import com.tauyeung.microkotlinservice.repositories.UserRepository
+import com.tauyeung.userservice.models.User
+import com.tauyeung.userservice.repositories.UserRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Controller
 

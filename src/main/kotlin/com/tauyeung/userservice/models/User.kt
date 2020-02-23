@@ -1,4 +1,4 @@
-package com.tauyeung.microkotlinservice.models
+package com.tauyeung.userservice.models
 
 import javax.persistence.*
 import javax.validation.constraints.Email

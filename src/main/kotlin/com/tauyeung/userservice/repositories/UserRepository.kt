@@ -1,6 +1,6 @@
-package com.tauyeung.microkotlinservice.repositories
+package com.tauyeung.userservice.repositories
 
-import com.tauyeung.microkotlinservice.models.User
+import com.tauyeung.userservice.models.User
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Controller
 

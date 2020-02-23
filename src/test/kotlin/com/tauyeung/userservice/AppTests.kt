@@ -1,4 +1,4 @@
-package com.tauyeung.microkotlinservice
+package com.tauyeung.userservice
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

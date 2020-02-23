@@ -1,6 +1,6 @@
-package com.tauyeung.microkotlinservice.controllers
+package com.tauyeung.userservice.controllers
 
-import com.tauyeung.microkotlinservice.repositories.UserRepository
+import com.tauyeung.userservice.repositories.UserRepository
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

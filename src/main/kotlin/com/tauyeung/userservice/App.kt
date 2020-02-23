@@ -1,4 +1,4 @@
-package com.tauyeung.microkotlinservice
+package com.tauyeung.userservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
