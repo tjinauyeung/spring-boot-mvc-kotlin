@@ -5,3 +5,9 @@ Content-Type: application/json
 ### Get one user
 GET localhost:8080/users/1
 Content-Type: application/json
+
+### Delete one user
+DELETE localhost:8080/users/1
+Content-Type: application/json
+
+###

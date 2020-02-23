@@ -1,6 +1,5 @@
-package com.tauyeung.userservice.repositories
+package com.tauyeung.userservice
 
-import com.tauyeung.userservice.models.User
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Controller
 

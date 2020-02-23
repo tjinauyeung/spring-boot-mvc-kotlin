@@ -1,7 +1,5 @@
-package com.tauyeung.userservice.config
+package com.tauyeung.userservice
 
-import com.tauyeung.userservice.models.User
-import com.tauyeung.userservice.repositories.UserRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Controller
 

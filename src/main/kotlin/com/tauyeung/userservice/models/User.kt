@@ -1,4 +1,4 @@
-package com.tauyeung.userservice.models
+package com.tauyeung.userservice
 
 import javax.persistence.*
 import javax.validation.constraints.Email
