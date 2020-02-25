@@ -1,7 +1,10 @@
-package com.tauyeung.userservice
+package com.tauyeung.user.api.config
 
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Controller
+
+import com.tauyeung.user.api.repositories.UserRepository
+import com.tauyeung.user.api.models.User
 
 @Controller
 class DbSeeder(val repository: UserRepository) : CommandLineRunner {

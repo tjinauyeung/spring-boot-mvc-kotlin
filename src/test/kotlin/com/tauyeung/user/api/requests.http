@@ -23,8 +23,8 @@ POST localhost:8080/users
 Content-Type: application/json
 
 {
-  "firstName": "Foo",
-  "lastName": "Bar"
+  "firstName": "f",
+  "lastName": "f",
+  "email": "f@b.nl"
 }
-
 ###

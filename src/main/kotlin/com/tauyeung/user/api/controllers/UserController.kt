@@ -1,13 +1,18 @@
-package com.tauyeung.userservice
+package com.tauyeung.user.api.controllers
 
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
+
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.server.ResponseStatusException
+
 import javax.validation.Valid
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Positive
+
+import com.tauyeung.user.api.repositories.UserRepository
+import com.tauyeung.user.api.models.User
 
 @RestController
 @RequestMapping("/users")
@@ -21,7 +26,6 @@ class UserController(private val repository: UserRepository) {
     @Operation(description = "Create user")
     fun createUser(
         @Valid
-        @NotNull(message = "User is required")
         @RequestBody
         user: User
     ) = repository.save(user);

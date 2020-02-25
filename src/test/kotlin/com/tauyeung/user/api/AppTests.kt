@@ -1,4 +1,4 @@
-package com.tauyeung.userservice
+package com.tauyeung.user.api
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

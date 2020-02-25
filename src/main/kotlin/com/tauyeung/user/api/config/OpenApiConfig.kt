@@ -1,4 +1,4 @@
-package com.tauyeung.userservice.config
+package com.tauyeung.user.api.config
 
 import io.swagger.v3.oas.models.Components
 import io.swagger.v3.oas.models.OpenAPI

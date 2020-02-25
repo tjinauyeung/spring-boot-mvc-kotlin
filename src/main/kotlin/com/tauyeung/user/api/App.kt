@@ -1,11 +1,11 @@
-package com.tauyeung.userservice
+package com.tauyeung.user.api
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class App
+class UserApplication
 
 fun main(args: Array<String>) {
-    runApplication<App>(*args)
+    runApplication<UserApplication>(*args)
 }
